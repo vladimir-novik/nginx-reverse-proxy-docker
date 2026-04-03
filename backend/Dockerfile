@@ -2,12 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# копируем только нужное
+COPY app.py .
+
 # не root пользователь
 RUN useradd -m appuser
 USER appuser
-
-# копируем только нужное
-COPY app.py .
 
 # документируем порт
 EXPOSE 8080
