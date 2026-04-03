@@ -10,9 +10,9 @@ USER appuser
 COPY app.py .
 
 # документируем порт
-EXPOSE 8000
+EXPOSE 8080
 
 # healthcheck
-HEALTHCHECK --interval=30s --timeout=3s CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"
+HEALTHCHECK --interval=30s --timeout=3s CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8080/')"
 
 CMD ["python", "app.py"]
