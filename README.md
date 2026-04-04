@@ -25,10 +25,12 @@ User → nginx → backend
 ```bash
 	git clone <https://github.com/vladimir-novik/nginx-reverse-proxy-docker>
 	cd nginx-reverse-proxy-docker
+```
 
 3. Запустите проект:
 ```bash
 	docker-compose up --build
+```
 
 ---
 
@@ -37,6 +39,7 @@ User → nginx → backend
 После запуска выполните команду: 
 ```bash
 	curl http://localhost
+```
 
 Также можно открыть в браузере: http://localhost
 Ожидаемый ответ: Hello from Effective Mobile!
