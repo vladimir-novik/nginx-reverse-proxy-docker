@@ -45,6 +45,7 @@ User → nginx → backend
 ```
 
 Также можно открыть в браузере: http://localhost
+
 Ожидаемый ответ: Hello from Effective Mobile!
 
 ---
