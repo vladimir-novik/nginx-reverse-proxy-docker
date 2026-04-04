@@ -22,12 +22,12 @@ User → nginx → backend
    - Docker Compose
 
 2. Клонируйте репозиторий:
-</> Bash
+```bash
 	git clone <https://github.com/vladimir-novik/nginx-reverse-proxy-docker>
-	cd <nginx-reverse-proxy-docker>
+	cd nginx-reverse-proxy-docker
 
 3. Запустите проект:
-</> Bash
+```bash
 	docker-compose up --build
 
 ---
@@ -35,7 +35,7 @@ User → nginx → backend
 ## Как проверить результат
 
 После запуска выполните команду: 
-</> Bash
+```bash
 	curl http://localhost
 
 Также можно открыть в браузере: http://localhost
