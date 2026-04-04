@@ -15,21 +15,24 @@ User → nginx → backend
 
 ---
 
+## Требования
+
+- Docker
+- Docker Compose
+
+---
+
 ## Как запустить проект
 
-1. Убедитесь, что установлены:
-   - Docker
-   - Docker Compose
-
-2. Клонируйте репозиторий:
+1. Клонируйте репозиторий:
 ```bash
-	git clone <https://github.com/vladimir-novik/nginx-reverse-proxy-docker>
+	git clone https://github.com/vladimir-novik/nginx-reverse-proxy-docker
 	cd nginx-reverse-proxy-docker
 ```
 
-3. Запустите проект:
+2. Запустите проект:
 ```bash
-	docker-compose up --build
+	docker compose up --build
 ```
 
 ---
@@ -46,10 +49,10 @@ User → nginx → backend
 
 ---
 
-## Как работает схема nginx -> backend
+## Как работает схема nginx → backend
 
-1. Пользователь отправляет запрос на localhost:80
-2. Запрос попадает в nginx
+1. Пользователь отправляет HTTP-запрос на http://localhost
+2. Запрос принимает nginx (порт 80)
 3. nginx проксирует запрос на backend (внутри Docker-сети)
-4. backend обрабатывает запрос и возвращает ответ
+4. backend обрабатывает запрос
 5. nginx возвращает ответ пользователю
